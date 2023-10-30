@@ -3,6 +3,6 @@
   "assertionSchema": "dataform_assertions",
   "warehouse": "bigquery",
   "defaultDatabase": "him-admin-project",
-  "defaultLocation": "asia-east1"
+  "defaultLocation": "asia-south1"
 }
     
