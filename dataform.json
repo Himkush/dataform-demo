@@ -3,6 +3,9 @@
   "assertionSchema": "dataform_assertions",
   "warehouse": "bigquery",
   "defaultDatabase": "him-admin-project",
-  "defaultLocation": "asia-south1"
+  "defaultLocation": "asia-south1",
+  "vars": {
+    "execEnv": "dev"
+  }
 }
     
