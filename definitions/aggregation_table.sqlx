@@ -1,0 +1,13 @@
+-- Author: Himanshu
+
+config {
+  type: "table",
+  schema: constants.dataform_test_dataset,
+  description: "Description of the first table.",
+}
+pre_operations {
+}
+
+SELECT SUM(number) AS total FROM ${ref(constants.dataform_test_dataset,"source_table")} 
+UNION ALL
+SELECT SUM(number) AS total FROM ${ref(constants.dataform_dataset,"source_table")}
