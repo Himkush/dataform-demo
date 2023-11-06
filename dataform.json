@@ -5,7 +5,7 @@
   "defaultDatabase": "him-admin-project",
   "defaultLocation": "asia-south1",
   "vars": {
-    "execEnv": "dev"
+    "execEnv": "uat"
   }
 }
     
