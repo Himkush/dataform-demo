@@ -2,7 +2,7 @@
   type: "table",
   schema: constants_1.dataform_test_dataset,
   description: "Description of the first table.",
-  dependencies: ["dataform_uat_source_table_2_assertions_rowConditions"],
+  dependencies: [constants_1.dataform_dataset+"_source_table_2_assertions_rowConditions"],
   tags: ["second_agg"]
 }
 pre_operations {
