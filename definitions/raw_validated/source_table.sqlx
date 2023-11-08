@@ -1,6 +1,6 @@
 config {
   type: "table",
-  schema: constants.dataform_test_dataset,
+  schema: constants_1.dataform_test_dataset,
   name: "source_table",
   description: "Description of the first table.",
 }

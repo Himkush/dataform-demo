@@ -1,0 +1,11 @@
+config { type: "assertion" }
+
+SELECT
+  *
+FROM
+  ${ref("source_table_2")}
+WHERE
+  number IS NULL
+  OR alpha IS NULL
+  OR sa1 IS NULL
+
