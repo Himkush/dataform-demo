@@ -1,0 +1,22 @@
+
+config {
+  type: "table",
+  schema: constants_1.dataform_dataset,
+  name: "source_table_2",
+  description: "Description of the first table.",
+  columns: {
+    number: "dada",
+    alpha: "ddadd"
+  },
+  assertions: {
+    uniqueKey: ["number"],
+    nonNull: ["number", "alpha"],
+    rowConditions: [
+      'sa1 not like "%R%"'
+    ]
+  }
+}
+
+SELECT 1 AS number, 'A' AS alpha, 'R' AS sa1
+UNION ALL
+SELECT 1 AS number, 'B' AS alpha, 'R' AS sa1

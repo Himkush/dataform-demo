@@ -1,0 +1,12 @@
+ config {
+  type: "table",
+  schema: constants_1.dataform_test_dataset,
+  description: "Description of the first table.",
+  dependencies: ["dataform_uat_source_table_2_assertions_rowConditions"],
+  tags: ["second_agg"]
+}
+pre_operations {
+}
+
+
+SELECT SUM(number) AS total FROM ${ref(constants_1.dataform_dataset,"source_table_2")}
